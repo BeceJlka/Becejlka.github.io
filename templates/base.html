@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+    <title>Becejlka.github.io | Junior Python dev</title>
+  </head>
+  <body>
+    <section class="promo dark-bg pt-2 pb-5">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg mb-5 navbar-dark">
+          <a href="/" class="navbar-brand logo d-flex align-items-center text-white text-decoration-none align-content-start">
+            <div class="logo-left pr-2">
+              <img src="{{ url_for('static', filename='image/ava.jpg') }}" alt="my face" class="rounded-circle" width="54">
+            </div>
+            <div class="logo-right ">
+              <div class="logo-title">Becejlka.github.io</div>
+              <div class="logo-subtitle text-muted">Junior Python dev</div>
+            </div>
+          </a>
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav m-auto">
+              <li class="nav-item mx-3">
+                <a href="/history/" class="nav-link text-muted link-border-bottom">Моя история</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="/work/" class="nav-link text-muted link-border-bottom">Мои работы</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="/contact/" class="nav-link text-muted link-border-bottom">Сотрудичество</a>
+              </li>
+            </ul>
+            <ul class="nav ml-auto">
+              <li class="nav-item mx-3">
+                <a href="https://github.com/BeceJlka" class="nav-link text-white link-border-bottom">Github</a>
+              </li>
+              <li class="nav-item mx-3 mr-0">
+                <a href="/contact/" class="nav-link text-white link-border-bottom">Написать мне</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+          <div class="row py-0 py-sm-5">
+            {% block content %} {% endblock %}
+          </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
